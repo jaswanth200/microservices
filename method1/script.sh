@@ -6,24 +6,25 @@ if [[ "$1" == "container" ]]; then
 
 
 bash  docker_package
-git clone https://github.com/TekspotEdu/microserviceapp.git
+
 #       if [[ $2 -eq "demo-frontend" && "demo-backend1" && "demo-backend2" ]]; then
 case $2 in
 
         "react")
-                cd /home/ubuntu/microserviceapp/demo-frontend
+                git clone https://github.com/TekspotEdu/microserviceapp.git
+                cd /microserviceapp/demo-frontend
                 sudo docker build -t docker_frontendimg . -f Dockerfile
                 sudo docker run -d docker_frontendimg
         ;;
 
         "java")
-                cd /home/ubuntu/microserviceapp/demo-backend1
+                cd microserviceapp/demo-backend1
                 sudo docker build -t docker_backend1img . -f Dockerfile
                 sudo docker run docker_backend1img
         ;;
 
         "python")
-                cd /home/ubuntu/microserviceapp/demo-backend2
+                cd microserviceapp/demo-backend2
                 sudo docker build -t docker_backend2img . -f Dockerfile
                 sudo docker run docker_backend2img
 
