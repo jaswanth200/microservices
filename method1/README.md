@@ -16,17 +16,17 @@ cd microservices/method1/
 
 ## • FOR DEPLOYING IN CONTAINER <br>
 
-Use this command for deploying demo-frontend service <br>
+Use this command for deploying react service <br>
   ```
    bash script.sh container react
   ```
 
-Use this command for deploying demo-backend1 service <br>
+Use this command for deploying java service <br>
 ```  
  bash script.sh container java
 ```
 
-Use this command for deploying demo-backend2 service <br>
+Use this command for deploying python service <br>
 ```  
  bash script.sh container python
 ```
@@ -35,17 +35,17 @@ Use this command for deploying demo-backend2 service <br>
  
 Use this command for deploying demo-frontend service <br>
  ``` 
-   bash script.sh aws demo-frontend <0.0.0.0> (change ip_adress as required)
+   bash script.sh aws react <0.0.0.0> (change ip_adress as required)
 ```
 
 Use this command for deploying demo-backend1 service    
  ``` 
-   bash script.sh aws demo-backend1 <0.0.0.0> (change ip_adress as required)
+   bash script.sh aws java <0.0.0.0> (change ip_adress as required)
 ```
 
 Use this command for deploying demo-backend2 service    
   ```
-  $ bash script.sh aws demo-backend2 <0.0.0.0> (change ip_adress as required)
+  $ bash script.sh aws python <0.0.0.0> (change ip_adress as required)
 ```
 
 type the command bash script.sh --help for details.
