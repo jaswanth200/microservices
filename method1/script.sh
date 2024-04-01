@@ -4,14 +4,13 @@
 if [[ "$1" == "container" ]]; then
 #installing docker
 
-
+ git clone https://github.com/TekspotEdu/microserviceapp.git
 bash  docker_package
 
 #       if [[ $2 -eq "demo-frontend" && "demo-backend1" && "demo-backend2" ]]; then
 case $2 in
 
-        "react")
-                git clone https://github.com/TekspotEdu/microserviceapp.git
+        "react") 
                 cd /microserviceapp/demo-frontend
                 sudo docker build -t docker_frontendimg . -f Dockerfile
                 sudo docker run -d docker_frontendimg
