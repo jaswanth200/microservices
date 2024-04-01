@@ -18,17 +18,17 @@ cd microservices/method1/
 
 Use this command for deploying demo-frontend service <br>
   ```
-   bash script.sh container demo-frontend
+   bash script.sh container react
   ```
 
 Use this command for deploying demo-backend1 service <br>
 ```  
- bash script.sh container demo-backend1
+ bash script.sh container java
 ```
 
 Use this command for deploying demo-backend2 service <br>
 ```  
- bash script.sh container demo-backend2
+ bash script.sh container python
 ```
 
 ## • FOR DEPLOYING IN AWS <br>
